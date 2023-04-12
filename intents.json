@@ -1,0 +1,190 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, I am Vision an conversational AI for Oscorp Hospital. What can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "about",
+      "patterns": [
+        "about oscorp",
+        "What is oscorp's vision?",
+        "Who is oscorp"
+        
+      ],  
+
+      "responses": [
+
+         "Welcome to Oscorp hospital services! We are a state-of-the-art medical facility that provides exceptional healthcare services to our patients. Our team of highly trained medical professionals includes doctors, nurses, and support staff who work tirelessly to ensure that you receive the best possible care. At our hospital, we offer a wide range of services. Our advanced technology and equipment allow us to provide accurate diagnoses and effective treatments for a variety of medical conditions. We are committed to making your experience with us as comfortable and stress-free as possible. Our patient-centered approach means that we prioritize your needs and preferences, and we strive to provide personalized care that meets your unique healthcare needs."
+     ]
+    },
+    {
+      "tag": "services",
+      "patterns": [
+        "services",
+        "Which services do you have?",
+        "What services do you provide?",
+        "What kinds of services are there?"
+      ],  
+
+      "responses": [
+        "Oscorp offer's 5 services \n  Diagnostic Services \n  Emergency Care \n  Health care services \n  In-Patient Services \n  Health Checkup services"
+      ]
+    },
+    {
+      "tag": "packages",
+      "patterns": [
+        "health packages?",
+        "Which packages do you have?",
+        "What packages do you provide?",
+        "What kinds of packages are there?",
+        "What types of health package do you offer?"                          
+      ], 
+      
+      "responses": [
+        "Currently, We offer 4 Health Check up Packages \n  Basic Health Checkup Package \n  Complete Health Checkup Package \n  Extended health checkup Package \n Blood test Package"
+      ]
+    },
+    {
+      "tag": "virtual rooms",
+      "patterns": [
+        "what rooms does oscorp have?",
+        "rooms in oscorp",
+        "Wards in oscorp"                          
+      ], 
+      
+      "responses": [
+        "Currently, We have 3 wards \n  Emergency Ward \n Diagnostic Room  \n  Super Speciality Room \n and Reception along with waiting area"
+      ]
+    },
+    {
+      "tag": "insurance",
+      "patterns": [
+        "what insurances is oscorp associated with?",
+        "insurances in hospital",
+        "insurances"                          
+      ], 
+      
+      "responses": [
+        "Oscorp is associated with following insurances \n Star Health Insurance \n TATA AIG \n LIC \n Bajaj Alliance \n Marsh"
+      ]
+    },
+    {
+      "tag": "Blood tests Package",
+      "patterns": [
+        "what is covered under Blood tests Package",
+        "Which package is best for blood tests?",    
+        "cost for blood test checkup"      
+      ], 
+      
+      "responses": [
+        "Blood test Checkup costs Rs 1,000 and covers following checkup's \n CBC \n Blood Sugar- fasting \n Lipid Profile \n Serum Uric Acid \n Liver Function Tests \n Blood Urea "      
+      ]
+    },
+    {
+      "tag": "Basic Package",
+      "patterns": [
+        "what is covered under Basic Health Checkup Package",
+        "Which package is affordable?",    
+        "cost for basic health checkup"      
+      ], 
+      
+      "responses": [
+        "We have a package for Basic Health Checkup which costs Rs 2,500 and covers following checkup's \n CBC \n Blood Sugar- fasting \n X-ray Chest \n ECG \n Ultrasound Study \n TSH "      
+      ]
+    },
+    {
+      "tag": "Complete Health Checkup Package",
+      "patterns": [
+        "what is covered under Complete Health Checkup Package",
+        "Which package is best for complete health checkup?",    
+        "cost for complete health checkup package", 
+        "packages for complete health checkup",
+        "need a complete checkup"     
+      ], 
+      
+      "responses": [
+        "We have a package for Complete Health Checkup which costs Rs 5,000 and covers following checkup's \n PPBS \n TMT or Echo \n HbA1C \n ECG \n Ultrasound Study \n Serum Creatinine"              
+      ]
+    },
+    {
+      "tag": "Extented Health Checkup Package",
+      "patterns": [
+        "what is covered under extended health checkup Package",
+        "Which package is best for extended checkup?",    
+        "cost for Extented Health Checkup Package",
+        "need extended service package plan",
+        "what is the cost of extended health package?"      
+      ], 
+      
+      "responses": [
+        "We have a package for Extended Health Checkup which costs Rs 5,500 and covers following checkup's \n TSH, T3, T4 \n HCV \n GGT \n Vitamin B12 \n Total Vitamin D3 \n Complete Consultation"              
+      ]             
+    },
+    
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Paypal",
+        "We accept most major credit cards, and Paypal"
+      ]
+    },
+    {
+      "tag": "delivery",
+      "patterns": [
+        "How long does delivery take?",
+        "How long does shipping take?",
+        "When do I get my delivery?"
+      ],
+      "responses": [
+        "Delivery takes 2-4 days",
+        "Shipping takes 2-4 days"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
+        "What did the buffalo say when his son left for college? Bison."
+      ]
+    }
+  ]
+}
