@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
   <!-- LOGO FOR SITE -->
 
-  <link rel='icon' href='images/logo.png' type='image/x-icon'>
+  <link rel='icon' href="{{ url_for('static', filename='images/logo.png') }}" type='image/x-icon'>
   <!-- CSS STYLESHEETS -->
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -64,23 +64,23 @@
     <img class="img-fluid" src="{{ url_for('static', filename='images/oscorp-hospital-bg.png') }}"/>
     <!-- <a href="arunity/index.html" class="about"> <button class="btn btn-outline-light btn-lg tour" type="button"><img class="virtual-button" src="static/images/vr-tour.png">Take A Virtual Tour</button></a> -->
 
-    <div class="button-virtual" id="button-7">
+    <a href="arunity/index.html"><div class="button-virtual" id="button-7">
       <div id="dub-arrow"><img src="static/images/vr-tour.png" alt="" /></div>
-      <a href="arunity/index.html">Virtual Tour</a>
-  </div>
+     Virtual Tour
+  </div></a>
 
     <ul class="nav justify-content-center tour-tab">
       <li class="nav-item">
-        <a class="nav-link" href="#">Reception</a>
+        <a class="nav-link" href="arunity/index.html">Reception</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Emergency Ward</a>
+        <a class="nav-link" href="arunity/index.html">Emergency Ward</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Diagnostic Room</a>
+        <a class="nav-link" href="arunity/index.html">Diagnostic Room</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Super Speciality Room</a>
+        <a class="nav-link" href="arunity/index.html">Super Speciality Room</a>
       </li>
     </ul>
 
@@ -97,10 +97,10 @@
             <p class="about">Welcome to our hospital services! We are a state-of-the-art medical facility that provides exceptional healthcare services to our patients. Our team of highly trained medical professionals includes doctors, nurses, and support staff who work tirelessly to ensure that you receive the best possible care. At our hospital, we offer a wide range of services, including emergency care, inpatient care, outpatient care, surgical services, diagnostic testing, and more. 
              Our advanced technology and equipment allow us to provide accurate diagnoses and effective treatments for a variety of medical conditions. We are committed to making your experience with us as comfortable and stress-free as possible. Our patient-centered approach means that we prioritize your needs and preferences, and we strive to provide personalized care that meets your unique healthcare needs.
             </p>
-           <div class="button-virtual" id="button-7">
+            <a href="arunity/index.html"><div class="button-virtual" id="button-7">
               <div id="dub-arrow"><img src="static/images/vr-tour.png" alt="" /></div>
-              <a href="arunity/index.html">Virtual Tour</a>
-          </div>
+             Virtual Tour
+          </div></a>
           </div>
 
           <div class="col-lg-6 title-gif">
@@ -169,13 +169,16 @@
             <h3 class="price-heading">Blood <br> Tests <br> Package</h3>
           </div>
           <div class="card-body">
-            <h2 class="price-text">₹ 1,000</h2>
+            <!-- <h2 class="price-text">₹ 1,000</h2> -->
             <p>CBC</p>
             <p>Blood Sugar-Fasting</p>
             <p>Lipid Profile</p>
             <p>Serum Uric Acid</p>
             <p>Liver Function Tests</p>
             <p>Blood Urea</p>
+            <div class="d-grid gap-2 mx-auto">
+              <a href="static/pdf/blood test package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+            </div>
           </div>
         </div>
         </div>
@@ -186,13 +189,16 @@
             <h3 class="price-heading">Basic Health Checkup Package</h3>
           </div>
           <div class="card-body">
-            <h2 class="price-text">₹ 2,500</h2>
+            <!-- <h2 class="price-text">₹ 2,500</h2> -->
             <p>CBC</p>
             <p>Blood Sugar-Fasting</p>
             <p>X-ray Chest</p>
             <p>ECG</p>
             <p>Ultrasound Study</p>
             <p>TSH</p>
+            <div class="d-grid gap-2 mx-auto">
+             <a href="static/pdf/basic health package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+            </div>
           </div>
         </div>
         </div>
@@ -203,13 +209,16 @@
               <h3 class="price-heading">Complete Health Checkup Package</h3>
             </div>
             <div class="card-body">
-              <h2 class="price-text">₹ 5,000</h2>
+              <!-- <h2 class="price-text">₹ 5,000</h2> -->
               <p>PPBS</p>
               <p>TMT or Echo</p>
               <p>HbA1C</p>
               <p>ECG</p>
               <p>Ultrasound Study</p>
               <p>Serum Creatinine</p>
+              <div class="d-grid gap-2 mx-auto">
+                <a href="static/pdf/complete health package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+              </div>
             </div>
           </div>
           </div>
@@ -220,13 +229,16 @@
                 <h3 class="price-heading">Extented Health Checkup Package</h3>
               </div>
               <div class="card-body">
-                <h2 class="price-text">₹ 5,500</h2>
+                <!-- <h2 class="price-text">₹ 5,500</h2> -->
                 <p>TSH, T3, T4</p>
                 <p>HCV</p>
                 <p>GGT</p>
                 <p>Vitamin B12</p>
                 <p>Total Vitamin D3</p>
                 <p>Complete Consultation</p>
+                <div class="d-grid gap-2 mx-auto">
+                  <a href="static/pdf/extended health package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+                </div>
               </div>
             </div>
             </div>
@@ -274,10 +286,10 @@
   <section class="white-section" id="cta">
     <div class="container-fluid reveal">
       <h3 class="big-heading">Experience healthcare from the comfort of your own home with our virtual hospital.</h3>
-      <div class="button-virtual" id="button-7">
+      <a href="arunity/index.html"><div class="button-virtual" id="button-7">
         <div id="dub-arrow"><img src="static/images/vr-tour.png" alt="" /></div>
-        <a href="arunity/index.html">Virtual Tour</a>
-      </div>    
+       Virtual Tour
+    </div></a>   
     </div>
   </section>
 
@@ -343,9 +355,6 @@
   </button>
 
 
-  <script>
-      $SCRIPT_ROOT = {{ request.script_root|tojson }};
-  </script>
   <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 

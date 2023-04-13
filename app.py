@@ -16,15 +16,10 @@ def base():
 @app.post("/predict")
 def predict():
     text = request.get_json().get("message")
-
-
-    #TODO: CHECK IF TEXT IS VALID
-
-
     response = get_response(text)
     message = {"answer": response}
     return jsonify(message)
 
 
 if __name__== "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
