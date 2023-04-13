@@ -10,7 +10,7 @@ def base():
     return render_template("index.html")
 
 @app.route("/virtualtour")
-def tour():
+def virtualtour():
     return render_template("arunity/index.html")
 
 @app.post("/predict")
