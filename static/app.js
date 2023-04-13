@@ -55,7 +55,7 @@ class Chatbox {
     fetch('https://oscorp.azurewebsites.net/predict', {
         method: 'POST',
         body: JSON.stringify({ message: text1 }),
-//         mode: 'cors',
+        mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
