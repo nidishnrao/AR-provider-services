@@ -9,6 +9,10 @@ app = Flask(__name__)
 def base():
     return render_template("index.html")
 
+@app.route("/virtualtour")
+def tour():
+    return render_template("arunity/index.html")
+
 @app.post("/predict")
 def predict():
     text = request.get_json().get("message")
