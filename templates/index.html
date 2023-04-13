@@ -169,13 +169,16 @@
             <h3 class="price-heading">Blood <br> Tests <br> Package</h3>
           </div>
           <div class="card-body">
-            <h2 class="price-text">₹ 1,000</h2>
+            <!-- <h2 class="price-text">₹ 1,000</h2> -->
             <p>CBC</p>
             <p>Blood Sugar-Fasting</p>
             <p>Lipid Profile</p>
             <p>Serum Uric Acid</p>
             <p>Liver Function Tests</p>
             <p>Blood Urea</p>
+            <div class="d-grid gap-2 mx-auto">
+              <a href="static/pdf/blood test package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+            </div>
           </div>
         </div>
         </div>
@@ -186,13 +189,16 @@
             <h3 class="price-heading">Basic Health Checkup Package</h3>
           </div>
           <div class="card-body">
-            <h2 class="price-text">₹ 2,500</h2>
+            <!-- <h2 class="price-text">₹ 2,500</h2> -->
             <p>CBC</p>
             <p>Blood Sugar-Fasting</p>
             <p>X-ray Chest</p>
             <p>ECG</p>
             <p>Ultrasound Study</p>
             <p>TSH</p>
+            <div class="d-grid gap-2 mx-auto">
+             <a href="static/pdf/basic health package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+            </div>
           </div>
         </div>
         </div>
@@ -203,13 +209,16 @@
               <h3 class="price-heading">Complete Health Checkup Package</h3>
             </div>
             <div class="card-body">
-              <h2 class="price-text">₹ 5,000</h2>
+              <!-- <h2 class="price-text">₹ 5,000</h2> -->
               <p>PPBS</p>
               <p>TMT or Echo</p>
               <p>HbA1C</p>
               <p>ECG</p>
               <p>Ultrasound Study</p>
               <p>Serum Creatinine</p>
+              <div class="d-grid gap-2 mx-auto">
+                <a href="static/pdf/complete health package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+              </div>
             </div>
           </div>
           </div>
@@ -220,13 +229,16 @@
                 <h3 class="price-heading">Extented Health Checkup Package</h3>
               </div>
               <div class="card-body">
-                <h2 class="price-text">₹ 5,500</h2>
+                <!-- <h2 class="price-text">₹ 5,500</h2> -->
                 <p>TSH, T3, T4</p>
                 <p>HCV</p>
                 <p>GGT</p>
                 <p>Vitamin B12</p>
                 <p>Total Vitamin D3</p>
                 <p>Complete Consultation</p>
+                <div class="d-grid gap-2 mx-auto">
+                  <a href="static/pdf/extended health package.pdf"><button class="btn btn-outline-dark" type="button">Download Brochure</button></a>
+                </div>
               </div>
             </div>
             </div>
@@ -343,9 +355,6 @@
   </button>
 
 
-  <script>
-      $SCRIPT_ROOT = {{ request.script_root|tojson }};
-  </script>
   <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 
