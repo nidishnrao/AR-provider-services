@@ -215,7 +215,8 @@ button{
     width: 10.5%;
     border: 2px solid #BFC0C0;
     margin: 20px 20px 20px 20px;
-    color: #BFC0C0;
+    color: #BFC0C0 !important;
+    background-color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -236,7 +237,8 @@ button{
     width: 10.5%;
     border: 2px solid #BFC0C0;
     margin: 20px 20px 20px 20px;
-    color: #BFC0C0;
+    color: #000000 !important;
+    background-color: rgb(230, 230, 230);
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -257,7 +259,8 @@ button{
     width: 11%;
     border: 2px solid #BFC0C0;
     margin: 20px 20px 20px 20px;
-    color: #BFC0C0;
+    color: #BFC0C0 !important;
+    background-color: black;
     text-transform: uppercase;
     text-decoration: none;
     font-size: .8em;
@@ -393,6 +396,15 @@ button{
 
 .price-heading{
     font-size: 1.5rem;
+}
+
+#pricing button{
+    width:100%;
+}
+
+#pricing button:hover{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
 }
 
 /* FOOTER  */
