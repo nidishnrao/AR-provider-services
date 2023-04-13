@@ -52,7 +52,7 @@ class Chatbox {
 
         //http://127.0.0.1:5000/predict
 
-    fetch('https://oscorp.azurewebsites.net/predict', {
+        fetch($SCRIPT_ROOT + '/predict', {
         method: 'POST',
         body: JSON.stringify({ message: text1 }),
         mode: 'cors',
