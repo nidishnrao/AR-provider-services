@@ -41,6 +41,7 @@ class Chatbox {
     onSendButton (chatbox) {
         var textField = chatbox.querySelector('input');
         let text1 = textField.value
+        console.log("this is ",$SCRIPT_ROOT)
         
         if (text1 === "") {
             return;
@@ -52,7 +53,8 @@ class Chatbox {
 
         //http://127.0.0.1:5000/predict
 
-        fetch($SCRIPT_ROOT + '/predict', {
+        fetch( $SCRIPT_ROOT+'/predict', {
+        
         method: 'POST',
         body: JSON.stringify({ message: text1 }),
         mode: 'cors',
@@ -64,7 +66,7 @@ class Chatbox {
         .then (r => {
             let msg2 = { name: "Vision", message: r.answer };
             this.messages.push(msg2);
-            this.updateChatText (chatbox)
+            this.updateChatText(chatbox)
             textField.value = ''
 
         }).catch((error) => {

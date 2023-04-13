@@ -331,8 +331,10 @@
   </button>
 
   <script>
-    $SCRIPT_ROOT = {{ request.script_root|tojson }};
-</script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+      console.log("this is :");
+      console.log(JSON.stringify($SCRIPT_ROOT));
+  </script>
   <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 </body>
 
